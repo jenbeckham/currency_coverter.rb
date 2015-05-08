@@ -12,6 +12,10 @@ class Currency
   def == (other)
     amount_money == other
   end
+
+  def * (other)
+    (@amount.to_f * other).to_s + @code
+  end
   # def code = (new_code)
   #   @code = new_code
   # end

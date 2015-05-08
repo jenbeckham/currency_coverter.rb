@@ -8,8 +8,7 @@ require "./Currency.rb"
 # puts usd.currency_rate
 
 dollars = Currency.new("USD", 7)
+euros = Currency.new("EUR", 9)
+dollarbill = Currency.new("USD", 1)
 puts dollars.amount_money
-puts dollars.amount_money == "8USD"
-puts dollars.amount_money == "7USD"
-puts dollars.amount_money == "8EUR"
-puts dollars.amount_money == "7EUR"
+puts dollars * 0.5
