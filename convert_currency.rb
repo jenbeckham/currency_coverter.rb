@@ -9,3 +9,7 @@ require "./Currency.rb"
 
 dollars = Currency.new("USD", 7)
 puts dollars.amount_money
+puts dollars.amount_money == "8USD"
+puts dollars.amount_money == "7USD"
+puts dollars.amount_money == "8EUR"
+puts dollars.amount_money == "7EUR"

@@ -9,6 +9,9 @@ class Currency
     @amount.to_s + @code
   end
 
+  def == (other)
+    amount_money == other
+  end
   # def code = (new_code)
   #   @code = new_code
   # end
