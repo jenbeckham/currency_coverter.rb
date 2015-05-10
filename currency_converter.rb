@@ -12,12 +12,10 @@ class CurrencyConverter
     # @currency_hash.include? @curracy.code
     # puts "#{c}"
     #@currency_hash.include?@currancy.code
-    Currency.new(new_c_object.amount, currency_code)
+    new_amount = (new_c_object.amount.to_f/@currency_hash[new_c_object.code])*
+    @currency_hash[currency_code]
+    Currency.new(new_amount, currency_code)
 
-
-
-
-    # @currency_hash[@currency.code] = x
     # @currency.amount.to_f * x), @currency.code)
 
     # puts Currency.new(@currency.amount, @currency_hash.key)
